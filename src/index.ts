@@ -43,8 +43,7 @@ async function main() {
 	}
     await stop();
 	logger.warn('ℹ printing puppeteer configs::', args);
-
-	browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
 		args,
 		defaultViewport: {
 			height: config.page.height,
